@@ -1,0 +1,83 @@
+/* TRANSFORMATIONS */
+
+
+
+
+/* BASE STYLES
+------------------------------------- */
+body {
+    margin: 0;
+    padding: 0.5em;
+    background-color: forestgreen;
+    color: black;
+    font-family: sans-serif;
+}
+
+img {
+    max-width: 100%;
+
+}
+
+
+
+
+
+/* NAVIGATION
+------------------------------------- */
+nav{ 
+    background: white;
+    position: fixed;
+    font-size:xx-large;
+}
+
+
+
+
+/* HOME PAGE
+------------------------------------- */
+main {
+    background-image: url(images/leaf-skeleton.png);
+    background-size: cover;
+    background-position: center;
+   border-top: beige;
+    mix-blend-mode: exclusion;
+}
+
+
+.leaf-1 {
+    opacity: 0.5;
+    position: relative;
+    z-index:1;
+    transform: skewX(10deg) scaleY(1.5);
+    filter:blur(10px);
+
+}
+.leaf-2 {
+    position:absolute;
+    left:0;
+    width:50vw;
+    transform: rotate(45deg) skewY(10deg);
+    filter:blur(10px);
+
+}
+
+/* GALLERY PAGE
+------------------------------------- */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5em;
+    max-width: 50em;
+    margin: 5em auto;
+}
+
+.gallery-item {
+    padding: 0.5em;
+    border: 1px solid black;
+    display: grid;
+    align-items: end;
+    background: white;
+}
+
+
+
